@@ -1,0 +1,14 @@
+{% extends 'app1/base_app1.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="mb-5">
+      {{ post.title }}
+    </h1>
+    <p>
+      {{ post.body }}
+    </p>
+{% endblock %}

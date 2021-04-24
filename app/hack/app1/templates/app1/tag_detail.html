@@ -1,0 +1,12 @@
+{% extends 'app1/base_app1.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <h1 class="mb-5">Публикации с тэгом "{{ tag.title|title }}":</h1>
+    {%for post in tag.posts.all %}
+        {% include 'app1/includes/post_card_template.html' %}
+    {% endfor $%}
+{% endblock %}

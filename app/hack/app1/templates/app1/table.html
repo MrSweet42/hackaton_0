@@ -1,0 +1,12 @@
+{% extends 'app1/base_app1.html' %}
+
+{% block title %}
+    Таблица
+{% endblock %}
+
+{% block content %}
+    <h1 class="mb-5">Таблица:</h1>
+    {%for post in posts %}
+        {% include 'app1/includes/post_card_template.html' %}
+    {% endfor $%}
+{% endblock %}
